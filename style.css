@@ -218,4 +218,209 @@ ul li{
 .footer_text ,li,h2{
    padding: 5px;
 }
+/* ================= RESPONSIVE DESIGN ================= */
 
+/* Tablet */
+@media (max-width: 1024px) {
+
+  /* Navbar spacing fix */
+  nav .logo {
+    margin-left: 20px;
+  }
+
+  nav div .lines {
+    margin-right: 20px;
+  }
+
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero_image {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .hero_cont {
+    align-items: center;
+  }
+
+  .hero_cont h1 {
+    font-size: 48px;
+  }
+
+  button {
+    align-self: center;
+  }
+
+  /* Features */
+  .properties {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 20px;
+  }
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Grid */
+  .grid {
+    grid-template-areas: 
+      "I1 I1"
+      "I2 I3"
+      "I4 I5"
+      "I6 I7";
+  }
+
+  /* Footer */
+  .footcontainer {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 30px;
+    text-align: center;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  #navbar {
+    padding: 0 10px;
+  }
+
+  /* Hero */
+  .hero_cont h1 {
+    font-size: 32px;
+  }
+
+  .discount {
+    font-size: small;
+  }
+
+  /* Properties */
+  .properties {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Grid (stack layout) */
+  .grid {
+    grid-template-areas: 
+      "I1"
+      "I2"
+      "I3"
+      "I4"
+      "I5"
+      "I6"
+      "I7";
+  }
+
+  /* Footer */
+  .footcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Email input */
+  #email {
+    width: 90%;
+  }
+}
+
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .hero_cont h1 {
+    font-size: 26px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .menutext {
+    width: auto;
+    padding: 5px 10px;
+  }
+}
+
+/* ===== EXTRA SMALL DEVICES (like 400px phones) ===== */
+@media (max-width: 400px) {
+
+  /* Hero section */
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero_cont h1 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  .hero_cont p {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    height: 35px;
+  }
+
+  /* Navbar */
+  #navbar {
+    height: auto;
+    padding: 10px;
+  }
+
+  nav .logo {
+    margin-left: 10px;
+  }
+
+  nav div .lines {
+    margin-right: 10px;
+  }
+
+  /* Features */
+  .properties {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+  }
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Grid (single column) */
+  .grid {
+    grid-template-areas: 
+      "I1"
+      "I2"
+      "I3"
+      "I4"
+      "I5"
+      "I6"
+      "I7";
+  }
+
+  /* Footer */
+  .footcontainer {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+
+  #email {
+    width: 100%;
+  }
+}
