@@ -1,4 +1,4 @@
-# 🍽️ Responsive Restaurant Website
+#  Restaurant  Website (Frontened)
 
 A modern and  responsive restaurant website built using **HTML and CSS**.
 This project focuses on clean UI design, responsive layouts, and real-world web development practices.
